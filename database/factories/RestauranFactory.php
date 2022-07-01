@@ -18,7 +18,7 @@ class RestauranFactory extends Factory
             'name' => $this->faker->name(),
             'description' => $this->faker->name(),
             'category_id' => rand(1,4),
-            'amount' => $this->faker->randomDigit,
+            'amount' => $this->faker->unique()->randomDigit,
             'image'=>'hinh'.rand(1,4).'.jpg',     
         ];
     }
